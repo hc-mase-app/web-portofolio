@@ -8,7 +8,7 @@ const geistMono = Geist_Mono({ subsets: ["latin"], variable: '--font-geist-mono'
 
 export const metadata: Metadata = {
   title: 'Yan Firdaus, S.H., CHRM., CPDA.',
-  description: 'HR Strategy & Organizational | Leadership Development & Empowering Leaders | Building HR Systems & Analytics.',
+  description: 'HR Strategy & Organizational | Leadership Development - Empowering Leaders | Building HR Systems & Analytics.',
   keywords: [
     'HR Professional',
     'Human Capital Development',
