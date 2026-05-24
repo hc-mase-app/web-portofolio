@@ -7,8 +7,8 @@ const geist = Geist({ subsets: ["latin"], variable: '--font-geist-sans' });
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: '--font-geist-mono' });
 
 export const metadata: Metadata = {
-  title: 'Yan Firdaus - Head Human Capital Development',
-  description: 'Strategic HR professional with 15+ years of expertise in human capital development, organizational development, and leadership coaching.',
+  title: 'Yan Firdaus, S.H., CHRM., CPDA.',
+  description: 'HR Strategy & Organizational | Leadership Development & Empowering Leaders | Building HR Systems & Analytics.',
   keywords: [
     'HR Professional',
     'Human Capital Development',
