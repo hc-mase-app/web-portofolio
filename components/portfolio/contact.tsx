@@ -50,6 +50,12 @@ const Contact = () => {
       value: portfolioData.contact.website,
       link: `https://${portfolioData.contact.website}`,
     },
+    {
+      icon: '🔗',
+      label: 'Linkedin',
+      value: 'linkedin.com/in/yanfirdaus',
+      link: portfolioData.socialLinks[0].url,
+    },
   ]
 
   return (
@@ -113,7 +119,7 @@ const Contact = () => {
           className="flex justify-center gap-4 mb-12"
         >
           {[
-            { name: 'LinkedIn', icon: '🔗', link: '#' },
+            { name: 'LinkedIn', icon: '🔗', link:portfolioData.socialLinks[0].url},
             { name: 'Email', icon: '✉', link: `mailto:${portfolioData.contact.email}` },
             { name: 'Phone', icon: '📞', link: `tel:${portfolioData.contact.phone.replace(/\s/g, '')}` },
           ].map((social, index) => (
