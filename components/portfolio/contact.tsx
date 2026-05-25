@@ -33,10 +33,10 @@ const Contact = () => {
       link: `mailto:${portfolioData.contact.email}`,
     },
     {
-      icon: '📱',
-      label: 'Phone',
+      icon: '💬',
+      label: 'WhatsApp',
       value: portfolioData.contact.phone,
-      link: `tel:${portfolioData.contact.phone.replace(/\s/g, '')}`,
+      link: 'https://wa.me/62817393994',
     },
     {
       icon: '📍',
