@@ -25,10 +25,7 @@ const Certifications = () => {
   }
 
   return (
-    <section
-      id="certifications"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-background/50"
-    >
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background/50">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <motion.div

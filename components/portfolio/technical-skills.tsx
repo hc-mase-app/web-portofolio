@@ -38,7 +38,7 @@ export default function TechnicalSkills() {
   }
 
   return (
-    <section id="technical-skills" className="relative min-h-screen bg-card/30 py-20 px-6">
+    <section className="relative min-h-screen bg-card/30 py-20 px-6">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-orange-500/5 to-transparent" />
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Header */}

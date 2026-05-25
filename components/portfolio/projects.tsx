@@ -26,10 +26,7 @@ const Projects = () => {
   }
 
   return (
-    <section
-      id="projects"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-background border-t border-border/10"
-    >
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-background/80 to-background border-t border-white/10 relative overflow-hidden">
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
         <motion.div
@@ -40,9 +37,9 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Featured <span className="text-orange-500">Projects</span>
+            Featured <span className="text-transparent bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text">Projects</span>
           </h2>
-          <div className="w-16 h-1 bg-orange-500 rounded-full mx-auto" />
+          <div className="w-20 h-1.5 bg-gradient-to-r from-orange-500/0 via-orange-500 to-orange-500/0 rounded-full mx-auto" />
         </motion.div>
 
         {/* Projects Grid */}
@@ -57,8 +54,8 @@ const Projects = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              whileHover={{ y: -8 }}
-              className="group relative rounded-xl overflow-hidden bg-card border border-border/20 hover:border-orange-500/50 transition-all duration-300"
+              whileHover={{ y: -10 }}
+              className="group relative rounded-2xl overflow-hidden bg-gradient-to-br from-white/8 to-white/[0.03] border border-white/15 shadow-lg hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300"
             >
               {/* Image Container */}
               <div className="relative h-48 overflow-hidden">

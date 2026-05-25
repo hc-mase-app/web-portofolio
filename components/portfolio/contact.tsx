@@ -53,10 +53,7 @@ const Contact = () => {
   ]
 
   return (
-    <section
-      id="contact"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-background border-t border-border/10"
-    >
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background border-t border-border/10">
       <div className="max-w-4xl mx-auto">
         {/* Section Title */}
         <motion.div

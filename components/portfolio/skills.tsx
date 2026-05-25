@@ -25,7 +25,7 @@ export default function Skills() {
   }
 
   return (
-    <section id="skills" className="relative min-h-screen bg-background py-20 px-6">
+    <section className="relative min-h-screen bg-background py-20 px-6">
       <div className="absolute inset-0 bg-gradient-to-b from-orange-500/5 via-transparent to-transparent" />
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Header */}
