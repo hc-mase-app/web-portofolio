@@ -45,12 +45,6 @@ const Contact = () => {
       link: '#',
     },
     {
-      icon: '🌐',
-      label: 'Website',
-      value: portfolioData.contact.website,
-      link: `https://${portfolioData.contact.website}`,
-    },
-    {
       icon: '🔗',
       label: 'Linkedin',
       value: 'linkedin.com/in/yanfirdaus',
