@@ -93,6 +93,8 @@ const Contact = () => {
             <motion.a
               key={index}
               href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
               variants={itemVariants}
               whileHover={{ y: -4 }}
               className="p-6 rounded-xl bg-card/50 backdrop-blur border border-border/20 hover:border-orange-500/50 hover:bg-card/80 transition-all duration-300 group cursor-pointer"
@@ -126,6 +128,8 @@ const Contact = () => {
             <motion.a
               key={index}
               href={social.link}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               className="w-12 h-12 rounded-full bg-orange-500/20 border border-orange-500/50 flex items-center justify-center text-xl hover:bg-orange-500/30 transition-colors"
