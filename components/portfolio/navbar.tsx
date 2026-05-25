@@ -60,7 +60,7 @@ const Navbar = () => {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <motion.div
@@ -72,7 +72,7 @@ const Navbar = () => {
           </motion.div>
 
           {/* Navigation Items */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="flex items-center gap-1 overflow-x-auto whitespace-nowrap scrollbar-hide ml-4">
             {navItems.map((item) => (
               <motion.button
                 key={item.id}
@@ -95,22 +95,6 @@ const Navbar = () => {
               </motion.button>
             ))}
           </div>
-
-          {/* Mobile Menu Button */}
-          <motion.button
-            className="md:hidden p-2 rounded-lg hover:bg-background/50 transition-colors"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </motion.button>
         </div>
       </div>
     </motion.nav>
