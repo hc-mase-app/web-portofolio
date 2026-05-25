@@ -1,7 +1,7 @@
 export const portfolioData = {
   name: 'Yan Firdaus, S.H., CHRM., CPDA',
-  title: 'YAN FIRDAUS, S.H., CHRM., CPDA',
-  subtitle: 'HR Strategy & Organizational Performance | Leadership Development | HR Digitalization',
+  title: 'HR Strategy & Organizational Performance | Leadership Development | HR Digitalization',
+  subtitle: '',
   intro: 'Human Capital professional with 15+ years of specialized experience in Human Capital Development, HCGA, and Organizational Development. Expert in HR digitalization, leadership development, and aligning HR strategies with business objectives to drive organizational effectiveness.',
   image: '/gallery/pp.png',
 

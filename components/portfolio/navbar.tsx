@@ -46,7 +46,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               className="text-xl font-bold text-foreground cursor-pointer flex-shrink-0"
             >
-              Yan Firdaus
+              Portofolio
             </motion.div>
           </Link>
 
@@ -88,7 +88,7 @@ const Navbar = () => {
                 whileHover={{ scale: 1.05 }}
                 className="text-lg font-bold text-foreground cursor-pointer flex-shrink-0"
               >
-                Yan Firdaus
+                Portofolio
               </motion.div>
             </Link>
           </div>

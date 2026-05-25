@@ -76,22 +76,22 @@ const HomeLanding = () => {
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center pt-20 pb-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start lg:items-center">
             {/* Text Content */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="space-y-8"
+              className="space-y-8 order-2 lg:order-1"
             >
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="space-y-4"
+                className="space-y-6"
               >
                 <motion.h1
-                  className="text-5xl md:text-6xl font-bold text-foreground leading-tight"
+                  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.1 }}
@@ -99,7 +99,7 @@ const HomeLanding = () => {
                   {portfolioData.name}
                 </motion.h1>
                 <motion.p
-                  className="text-xl md:text-2xl text-orange-500 font-semibold"
+                  className="text-lg md:text-xl text-orange-500 font-semibold leading-relaxed"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
@@ -107,18 +107,10 @@ const HomeLanding = () => {
                   {portfolioData.title}
                 </motion.p>
                 <motion.p
-                  className="text-lg text-foreground/70 leading-relaxed max-w-lg"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.3 }}
-                >
-                  {portfolioData.subtitle}
-                </motion.p>
-                <motion.p
                   className="text-base text-foreground/60 leading-relaxed max-w-lg text-justify"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.4 }}
+                  transition={{ duration: 0.8, delay: 0.3 }}
                 >
                   Strategic HR Leader with 15+ years of expertise in Human Capital Development, Organizational Performance, and Digital Transformation.
                 </motion.p>
@@ -156,7 +148,7 @@ const HomeLanding = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="relative h-96 md:h-full min-h-96"
+              className="relative w-full order-1 lg:order-2"
             >
               <motion.div
                 animate={{
@@ -167,14 +159,14 @@ const HomeLanding = () => {
                   repeat: Infinity,
                   ease: 'easeInOut',
                 }}
-                className="relative h-full rounded-2xl overflow-hidden"
+                className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-transparent rounded-2xl z-10" />
                 <Image
                   src={portfolioData.image}
                   alt={portfolioData.name}
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                   priority
                 />
               </motion.div>
