@@ -517,14 +517,14 @@ export const portfolioData = {
       title: 'HCGS - Raker 2023',
       caption: 'PT Fajar Anugerah Dinamika',
       category: 'Activity',
-      image: '/gallery/raker2023.jpg',
+      image: '/gallery/raker2023.JPEG',
     },
     {
       id: 24,
       title: 'Pemeriksaan Ketenagakerjaan',
       caption: 'PT Bahtera Putera Nusantara',
       category: 'Ketenagakerjaan',
-      image: '/gallery/dinaker(2).jpg',
+      image: '/gallery/dinaker(2).JPG',
     },
     {
       id: 25,
@@ -545,7 +545,7 @@ export const portfolioData = {
       title: 'Tim Office Site',
       caption: 'PT Bahtera Putera Nusantara Site WAS KalTeng',
       category: 'PT Batara',
-      image: '/gallery/.timoffice.png',
+      image: '/gallery/.to.png',
     },
     {
       id: 28,
