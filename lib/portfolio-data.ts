@@ -422,9 +422,9 @@ export const portfolioData = {
     {
       id: 9,
       title: 'Fresh Mechanic Development Program',
-      caption: 'Fresh Mechanic Development Program - Technical competency training',
+      caption: 'SkillUp training',
       category: 'Training Activities',
-      image: '/gallery/fmdp1.jpg',
+      image: '/gallery/fmdp.png',
     },
     {
       id: 10,
