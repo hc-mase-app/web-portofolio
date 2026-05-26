@@ -112,7 +112,7 @@ const HomeLanding = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.3 }}
                 >
-                  Strategic HR Leader with 15+ years of expertise in Human Capital Development, Organizational Performance, and Digital Transformation.
+                  Human Capital professional with 15+ years Experience and 10 Years of specialized experience in Human Capital Development, HCGA, and Organizational Development. Expert in HR digitalization, leadership development, and aligning HR strategies with business objectives to drive organizational effectiveness.
                 </motion.p>
               </motion.div>
 
