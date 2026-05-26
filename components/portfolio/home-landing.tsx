@@ -112,7 +112,7 @@ const HomeLanding = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.3 }}
                 >
-                  Human Capital professional with 15+ years Experience and 10 Years of specialized experience in Human Capital Development, HCGA, and Organizational Development. Expert in HR digitalization, leadership development, and aligning HR strategies with business objectives to drive organizational effectiveness.
+                  Professional with 15+ years of overall professional experience, including 10+ years specializing in Human Capital Development, HCGA, and Organizational Development. Passionate about HR digitalization, leadership development, and building people strategies aligned with business growth and organizational effectiveness.
                 </motion.p>
               </motion.div>
 
@@ -258,7 +258,7 @@ const HomeLanding = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-foreground/60 text-sm">
-              &copy; 2024 Yan Firdaus. All rights reserved.
+              &copy; 2026 Yan Firdaus. All rights reserved.
             </div>
             <div className="flex gap-6">
               <Link href={`mailto:${portfolioData.contact.email}`} className="text-foreground/60 hover:text-orange-500 transition-colors text-sm">
