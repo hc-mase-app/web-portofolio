@@ -381,7 +381,7 @@ export const portfolioData = {
       id: 3,
       title: 'Training Activities Documentation',
       caption: 'Operator Development Program - Technical training session',
-      category: 'Development Program',
+      category: 'SkillUp Dev Program',
       image: '/gallery/odp1.jpg',
     },
     {
@@ -423,14 +423,14 @@ export const portfolioData = {
       id: 9,
       title: 'Fresh Mechanic Development Program',
       caption: 'SkillUp training',
-      category: 'Development Program',
+      category: 'SkillUp Dev Program',
       image: '/gallery/fmdp.png',
     },
     {
       id: 10,
       title: 'Fresh Mechanic Development Program',
       caption: 'Employee engagement and team bonding initiative',
-      category: 'Development Program',
+      category: 'SkillUp Dev Program',
       image: '/gallery/fmdp2.jpg',
     },
     {
