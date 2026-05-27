@@ -570,5 +570,12 @@ export const portfolioData = {
       category: 'Site & Operational Activities',
       image: '/gallery/hcgs2.png',
     },
+    {
+      id: 31,
+      title: 'National Competition - Jakarta 2026',
+      caption: 'Goes to South Asian Competition',
+      category: 'Corporate Events',
+      image: '/gallery/juri.png',
+    },
   ],
 }
