@@ -582,7 +582,7 @@ export const portfolioData = {
       title: 'Sosialisasi Layoff',
       caption: 'PT FAD Site Berau Coal',
       category: 'Industrial Relations',
-      image: '/gallery/juri.png',
+      image: '/gallery/disnaker2.png',
     },
   ],
 }
