@@ -497,7 +497,7 @@ export const portfolioData = {
     {
       id: 20,
       title: 'Optimalisasi Program AKAD',
-      category: 'HR & Industrial Relations',
+      category: 'Industrial Relations',
       image: '/gallery/disnaker.png',
     },
     {
@@ -549,6 +549,12 @@ export const portfolioData = {
       title: 'Office Team Site - WAS',
       category: 'Site & Operational Activities',
       image: '/gallery/hrga-site-was.png',
+    },
+    {
+      id: 29,
+      title: 'Klarifikasi dan Konfirmasi Ketenagakernaan',
+      category: 'Industrial Relations',
+      image: '/gallery/ir-2.png',
     },
   ],
 }
