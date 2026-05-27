@@ -577,5 +577,12 @@ export const portfolioData = {
       category: 'Corporate Events',
       image: '/gallery/juri.png',
     },
+    {
+      id: 32,
+      title: 'Sosialisasi Layoff',
+      caption: 'PT FAD Site Berau Coal',
+      category: 'Industrial Relations',
+      image: '/gallery/juri.png',
+    },
   ],
 }
