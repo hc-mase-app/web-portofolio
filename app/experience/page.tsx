@@ -2,7 +2,6 @@
 
 import Navbar from '@/components/portfolio/navbar'
 import Experience from '@/components/portfolio/experience'
-import Education from '@/components/portfolio/education'
 import Footer from '@/components/portfolio/footer'
 
 export default function ExperiencePage() {
@@ -11,7 +10,6 @@ export default function ExperiencePage() {
       <Navbar />
       <div className="pt-20">
         <Experience />
-        <Education />
       </div>
       <Footer />
     </main>
