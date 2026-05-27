@@ -586,5 +586,12 @@ export const portfolioData = {
       category: 'Industrial Relations',
       image: '/gallery/disnaker2.png',
     },
+    {
+      id: 33,
+      title: 'Meeting Coordination',
+      caption: 'PT SSS All Site',
+      category: 'Site & Operational Activities',
+      image: '/gallery/disnaker2.png',
+    },
   ],
 }
