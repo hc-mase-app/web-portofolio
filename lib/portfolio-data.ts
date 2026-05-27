@@ -497,7 +497,7 @@ export const portfolioData = {
     {
       id: 20,
       title: 'Optimalisasi Program AKAD - DisnaKerTrans KalTeng',
-      caption: 'PT Batara Site WAS Kalteng'
+      caption: 'PT Batara Site WAS Kalteng',
       category: 'Industrial Relations',
       image: '/gallery/disnaker.png',
     },
@@ -554,7 +554,7 @@ export const portfolioData = {
     {
       id: 29,
       title: 'Audit DisNakerTrans KalTeng - site WAS',
-      caption: 'PT Bahtera Putera Nusantara Site WAS KalTeng'
+      caption: 'PT Bahtera Putera Nusantara Site WAS KalTeng',
       category: 'Industrial Relations',
       image: '/gallery/ir-2.png',
     },
