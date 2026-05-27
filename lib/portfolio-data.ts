@@ -407,9 +407,9 @@ export const portfolioData = {
     },
     {
       id: 7,
-      title: 'Operational Leadership',
-      caption: 'Site visit and operational leadership engagement',
-      category: 'Site & Operational Activities',
+      title: 'Sosialisasi Kebijakan PT FAD Site Berau Coal',
+      caption: 'Site visit and operational',
+      category: 'Industrial Relations',
       image: '/gallery/pt-berau-coal-2.jpg',
     },
     {
@@ -555,6 +555,20 @@ export const portfolioData = {
       title: 'Audit DisNakerTrans KalTeng - site WAS',
       category: 'Industrial Relations',
       image: '/gallery/ir-2.png',
+    },
+    {
+      id: 29,
+      title: 'Opening Ceremony - FMDP Batch 1',
+      caption: 'Fresh Mechanic Development Program',
+      category: 'SkillUp Dev Program',
+      image: '/gallery/opening-fmdp.png',
+    },
+    {
+      id: 30,
+      title: 'HCGS Coordination',
+      caption: 'PT FAD Site Berau Coal',
+      category: 'Site & Operational Activities',
+      image: '/gallery/hcgs2.png',
     },
   ],
 }
