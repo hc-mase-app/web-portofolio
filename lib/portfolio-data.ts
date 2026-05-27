@@ -591,7 +591,7 @@ export const portfolioData = {
       title: 'Meeting Coordination',
       caption: 'PT SSS All Site',
       category: 'Site & Operational Activities',
-      image: '/gallery/disnaker2.png',
+      image: '/gallery/sss1.png',
     },
   ],
 }
