@@ -92,8 +92,7 @@ export const portfolioData = {
       position: 'Acquisition Manager',
       period: 'February 2016 – September 2018',
       location: 'Bali, Indonesia',
-      description: 'Managed merchant acquisition, business partnership development, and operational coordination. Conducted market research, business development initiatives, and customer relationship management to support business growth and operational effectiveness.',
-                   'In addition, supported recruitment activities, workforce planning, employee relations, and HR operational administration. Assisted in handling Industrial Relations matters, employee performance monitoring, and manpower forecasting aligned with operational and business needs.',
+      description: 'Managed merchant acquisition, business partnership development, and operational coordination. Conducted market research, business development initiatives, and customer relationship management to support business growth and operational effectiveness, In addition, supported recruitment activities, workforce planning, employee relations, and HR operational administration. Assisted in handling Industrial Relations matters, employee performance monitoring, and manpower forecasting aligned with operational and business needs.',
       keyContributions: [
         'Drove merchant acquisition and business development initiatives',
         'Supported recruitment and workforce planning activities',
