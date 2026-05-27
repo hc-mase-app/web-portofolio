@@ -538,5 +538,17 @@ export const portfolioData = {
       category: 'Competition',
       image: '/gallery/qcc2.png',
     },
+    {
+      id: 27,
+      title: 'HCGS Raker 2023',
+      category: 'Corporate Events',
+      image: '/gallery/hcgs-raker-2023.png',
+    },
+    {
+      id: 28,
+      title: 'Office Team Site - WAS',
+      category: 'Site & Operational Activities',
+      image: '/gallery/hrga-site-was.png',
+    },
   ],
 }
