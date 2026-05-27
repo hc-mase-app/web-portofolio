@@ -83,7 +83,7 @@ const Experience = () => {
                     </span>
                   </div>
 
-                  <p className="text-foreground/70 leading-relaxed">{job.description}</p>
+                  <p className="text-foreground/70 leading-relaxed text-justify">{job.description}</p>
 
                   {job.keyContributions && (
                     <div className="mt-4 pt-4 border-t border-orange-500/20">
