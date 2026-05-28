@@ -6,6 +6,20 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+
+  headers: async () => {
+    return [
+      {
+        source: '/cv',
+        headers: [
+          {
+            key: 'Content-Disposition',
+            value: 'attachment; filename="Yan-Firdaus-CV.pdf"',
+          },
+        ],
+      },
+    ]
+  },
 }
 
 export default nextConfig
