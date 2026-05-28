@@ -3,6 +3,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+
   images: {
     unoptimized: true,
   },
@@ -11,6 +12,15 @@ const nextConfig = {
     return [
       {
         source: '/cv',
+        headers: [
+          {
+            key: 'Content-Disposition',
+            value: 'attachment; filename="Yan-Firdaus-CV.pdf"',
+          },
+        ],
+      },
+      {
+        source: '/cv.pdf',
         headers: [
           {
             key: 'Content-Disposition',
