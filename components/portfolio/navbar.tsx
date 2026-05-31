@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { Download } from 'lucide-react'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -76,6 +77,16 @@ const Navbar = () => {
                 </Link>
               )
             })}
+            <motion.a
+              href="/cv.pdf"
+              download
+              className="ml-2 inline-flex items-center gap-1.5 rounded-full border border-orange-500/40 bg-orange-500/10 px-3 py-2 text-sm font-medium text-orange-500 transition-all hover:border-orange-500 hover:bg-orange-500 hover:text-white"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Download className="h-4 w-4" aria-hidden="true" />
+              <span>Download</span>
+            </motion.a>
           </div>
         </div>
 
@@ -119,6 +130,16 @@ const Navbar = () => {
                 </Link>
               )
             })}
+            <motion.a
+              href="/cv.pdf"
+              download
+              className="inline-flex items-center gap-1.5 rounded-full border border-orange-500/40 bg-orange-500/10 px-2.5 py-1.5 text-xs font-medium text-orange-500 transition-all hover:border-orange-500 hover:bg-orange-500 hover:text-white"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Download className="h-3.5 w-3.5" aria-hidden="true" />
+              <span>Download</span>
+            </motion.a>
           </div>
         </div>
       </div>
