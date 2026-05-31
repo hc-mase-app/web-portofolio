@@ -85,7 +85,7 @@ const Hero = () => {
             >
               {[
                 { label: 'Years Experience', value: '15+' },
-                { label: 'Projects Completed', value: '7+' },
+                { label: 'Projects Completed', value: '9+' },
                 { label: 'Team Members Led', value: '250+' },
               ].map((stat, index) => (
                 <motion.div

@@ -134,7 +134,44 @@ export const portfolioData = {
 
   projects: [
     {
+      title: 'Talent Management & Succession Planning Framework',
+      category: 'Human Capital Strategy',
+      description: 'Designed and implemented a talent management and succession planning framework to identify high-potential employees, develop leadership pipelines, and ensure business continuity for critical positions.',
+      achievements: [
+        'Mapped critical positions and leadership continuity risks',
+        'Built a structured high-potential employee identification framework',
+        'Created succession pipelines for future leadership readiness',
+      ],
+      tags: ['Talent Management', 'Succession Planning', 'Leadership Pipeline'],
+      image: '/projects/talent-management.png',
+    },
+    {
+      title: 'Human Capital Analytics Dashboard',
+      category: 'HR Analytics & Digitalization',
+      description: 'Developed a Human Capital Analytics Dashboard integrating workforce, turnover, training, and performance metrics to support data-driven decision making.',
+      achievements: [
+        'Integrated workforce, turnover, training, and performance indicators',
+        'Enabled management visibility into key human capital trends',
+        'Improved evidence-based HR planning and decision support',
+      ],
+      tags: ['HR Analytics', 'Dashboard', 'Data-Driven HR'],
+      image: '/projects/hc-dashboard.png',
+    },
+    {
+      title: 'NOVI AI Human Capital Assistant',
+      category: 'AI & HR Innovation',
+      description: 'Developed NOVI, an AI-powered Human Capital Assistant for HR knowledge management, employee support, policy guidance, and organizational learning.',
+      achievements: [
+        'Built an AI assistant concept for HR knowledge management',
+        'Supported employee guidance on policies, processes, and learning topics',
+        'Introduced AI-enabled HR service support and organizational learning',
+      ],
+      tags: ['AI Assistant', 'HR Innovation', 'Knowledge Management'],
+      image: '/projects/novi.png',
+    },
+    {
       title: 'Empowering Leaders Development Program',
+      category: 'Leadership Development',
       description: 'Comprehensive leadership development program with coaching and mentoring excellence',
       achievements: [
         'Trained 250+ emerging leaders across organization',
@@ -145,18 +182,20 @@ export const portfolioData = {
       image: '/gallery/project-leadership.png',
     },
     {
-      title: 'Psikotest Assessment System - Web Base',
+      title: 'Psikotest Assessment System - Web-Based',
+      category: 'HR Digitalization',
       description: 'Web-based psychological testing and employee assessment platform designed to digitalize recruitment, evaluation, and competency measurement processes.',
       achievements: [
         'Developed end-to-end online psychological assessment platform',
         'Digitalized recruitment and employee evaluation processes',
         'Improved assessment efficiency, reporting, and data management',
       ],
-      tags: ['HRDigitalization', 'Assessment', 'Wev Applications'],
+      tags: ['HR Digitalization', 'Assessment', 'Web Applications'],
       image: '/gallery/test.png',
     },
     {
       title: 'HR Integrated Management System (HR IMS)',
+      category: 'HR Systems',
       description: 'Custom web-based HRIS platform for centralized HR operations and data management',
       achievements: [
         'Automated HR workflows and processes',
@@ -168,6 +207,7 @@ export const portfolioData = {
     },
     {
       title: 'Employee Leave Request Application',
+      category: 'HR Operations Automation',
       description: 'Automated leave management system for streamlined approval workflows',
       achievements: [
         'Reduced leave administration time by 70%',
@@ -179,6 +219,7 @@ export const portfolioData = {
     },
     {
       title: 'Fresh Mechanic Development Program (FMDP)',
+      category: 'Technical Development',
       description: 'Comprehensive mechanical and technical competency development for high school graduates',
       achievements: [
         'Trained 50+ mechanics with technical expertise',
@@ -190,6 +231,7 @@ export const portfolioData = {
     },
     {
       title: 'Operator Development Program (ODP)',
+      category: 'Operational Excellence',
       description: 'Specialized training program transforming high school graduates into skilled heavy equipment operators',
       achievements: [
         'Trained 50+ operators for mining operations',

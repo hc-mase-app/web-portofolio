@@ -2,6 +2,15 @@
 
 import { motion } from 'framer-motion'
 import { portfolioData } from '@/lib/portfolio-data'
+import { Building2, ChartNoAxesCombined, HardHat, MonitorCog, UsersRound } from 'lucide-react'
+
+const expertiseIcons = [
+  ChartNoAxesCombined,
+  Building2,
+  UsersRound,
+  MonitorCog,
+  HardHat,
+]
 
 const About = () => {
   const containerVariants = {
@@ -60,27 +69,37 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5"
         >
-          {portfolioData.about.expertise.map((item, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              whileHover={{ y: -10 }}
-              className="group relative p-6 rounded-2xl bg-gradient-to-br from-white/8 to-white/[0.03] backdrop-blur-xl border border-white/15 shadow-lg hover:shadow-xl hover:shadow-orange-500/20 transition-all duration-300"
-            >
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-500/0 to-orange-500/0 group-hover:from-orange-500/10 group-hover:to-transparent transition-all duration-300" />
-              <div className="relative z-10">
-                <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
-                <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-orange-400 transition-colors duration-300">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-foreground/60 leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
-                  {item.description}
-                </p>
-              </div>
-            </motion.div>
-          ))}
+          {portfolioData.about.expertise.map((item, index) => {
+            const Icon = expertiseIcons[index] ?? ChartNoAxesCombined
+
+            return (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                whileHover={{ y: -6 }}
+                className="group relative h-full min-h-64 overflow-hidden rounded-xl border border-white/10 bg-white/[0.035] p-6 shadow-lg shadow-black/20 transition-all duration-300 hover:border-orange-500/35 hover:bg-white/[0.055] hover:shadow-orange-500/10"
+              >
+                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-70" />
+
+                <div className="relative z-10 flex h-full flex-col gap-5">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg border border-orange-500/25 bg-orange-500/10 text-orange-400 transition-colors duration-300 group-hover:border-orange-500/45 group-hover:bg-orange-500/15">
+                    <Icon className="h-6 w-6" aria-hidden="true" />
+                  </div>
+
+                  <div className="space-y-3">
+                    <h3 className="text-lg font-semibold leading-snug text-foreground transition-colors duration-300 group-hover:text-orange-400">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-foreground/60 transition-colors duration-300 group-hover:text-foreground/75">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            )
+          })}
         </motion.div>
 
 

@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { portfolioData } from '@/lib/portfolio-data'
+import { CheckCircle2 } from 'lucide-react'
 
 const Projects = () => {
   const containerVariants = {
@@ -54,32 +55,34 @@ const Projects = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              whileHover={{ y: -10 }}
-              className="group relative rounded-2xl overflow-hidden bg-gradient-to-br from-white/8 to-white/[0.03] border border-white/15 shadow-lg hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300"
+              whileHover={{ y: -6 }}
+              className="group relative flex h-full min-h-[34rem] flex-col overflow-hidden rounded-xl border border-white/10 bg-white/[0.035] shadow-lg shadow-black/20 transition-all duration-300 hover:border-orange-500/35 hover:bg-white/[0.055] hover:shadow-orange-500/10"
             >
-              {/* Image Container */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-44 overflow-hidden border-b border-white/10">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-background/15 to-transparent" />
+                <div className="absolute left-4 top-4 rounded-full border border-orange-500/30 bg-background/75 px-3 py-1 text-xs font-semibold text-orange-400 backdrop-blur">
+                  {project.category}
+                </div>
               </div>
 
-              {/* Content */}
-              <div className="p-6 space-y-4">
-                <h3 className="text-xl font-bold text-foreground line-clamp-2">
-                  {project.title}
-                </h3>
+              <div className="flex flex-1 flex-col p-6">
+                <div className="space-y-3">
+                  <h3 className="text-xl font-bold leading-snug text-foreground transition-colors duration-300 group-hover:text-orange-400">
+                    {project.title}
+                  </h3>
 
-                <p className="text-foreground/60 text-sm leading-relaxed">
-                  {project.description}
-                </p>
+                  <p className="text-sm leading-relaxed text-foreground/60">
+                    {project.description}
+                  </p>
+                </div>
 
-                {/* Achievements */}
-                <div className="space-y-2">
+                <div className="mt-5 space-y-2.5">
                   {project.achievements.map((achievement, i) => (
                     <motion.div
                       key={i}
@@ -87,25 +90,23 @@ const Projects = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.4, delay: 0.1 + i * 0.1 }}
                       viewport={{ once: true }}
-                      className="flex items-start gap-2 text-sm text-foreground/70"
+                      className="flex items-start gap-2.5 text-sm leading-relaxed text-foreground/70"
                     >
-                      <span className="text-orange-500 flex-shrink-0 mt-1">✓</span>
+                      <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-orange-500" aria-hidden="true" />
                       <span>{achievement}</span>
                     </motion.div>
                   ))}
                 </div>
 
-                {/* Tags */}
-                <div className="flex flex-wrap gap-2 pt-4 border-t border-border/10">
+                <div className="mt-auto flex flex-wrap gap-2 border-t border-white/10 pt-5">
                   {project.tags.map((tag, i) => (
                     <motion.span
                       key={i}
-                      initial={{ opacity: 0, scale: 0.8 }}
+                      initial={{ opacity: 0, scale: 0.9 }}
                       whileInView={{ opacity: 1, scale: 1 }}
-                      whileHover={{ scale: 1.05 }}
                       transition={{ duration: 0.2, delay: i * 0.05 }}
                       viewport={{ once: true }}
-                      className="px-3 py-1 text-xs rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/30 hover:bg-orange-500/20 transition-colors"
+                      className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-medium text-foreground/65 transition-colors duration-300 group-hover:border-orange-500/25 group-hover:text-orange-300"
                     >
                       {tag}
                     </motion.span>

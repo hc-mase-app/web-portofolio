@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import { portfolioData } from '@/lib/portfolio-data'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Award, BriefcaseBusiness, FolderKanban, Images, Mail, UserRound } from 'lucide-react'
 
 const HomeLanding = () => {
   const menuItems = [
@@ -12,37 +12,37 @@ const HomeLanding = () => {
       title: 'About',
       description: 'Professional profile and expertise',
       href: '/about',
-      icon: '👤',
+      icon: UserRound,
     },
     {
       title: 'Experience',
       description: 'Career journey and achievements',
       href: '/experience',
-      icon: '💼',
+      icon: BriefcaseBusiness,
     },
     {
       title: 'Projects',
       description: 'Featured work and initiatives',
       href: '/projects',
-      icon: '🎯',
+      icon: FolderKanban,
     },
     {
       title: 'Gallery',
       description: 'Visual evidence and moments',
       href: '/gallery',
-      icon: '🖼️',
+      icon: Images,
     },
     {
       title: 'Certifications',
       description: 'Credentials and achievements',
       href: '/certifications',
-      icon: '🏆',
+      icon: Award,
     },
     {
       title: 'Contact',
       description: 'Get in touch',
       href: '/contact',
-      icon: '✉️',
+      icon: Mail,
     },
   ]
 
@@ -91,7 +91,7 @@ const HomeLanding = () => {
                 className="space-y-6"
               >
                 <motion.h1
-                  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight"
+                  className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.1rem] xl:text-[2.25rem] font-bold text-foreground leading-tight lg:whitespace-nowrap"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.1 }}
@@ -125,7 +125,7 @@ const HomeLanding = () => {
               >
                 {[
                   { label: 'Years Experience', value: '15+' },
-                  { label: 'Projects Completed', value: '7+' },
+                  { label: 'Projects Completed', value: '9+' },
                   { label: 'Team Members Led', value: '250+' },
                 ].map((stat, index) => (
                   <motion.div
@@ -213,42 +213,41 @@ const HomeLanding = () => {
             viewport={{ once: true }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
-            {menuItems.map((item, index) => (
-              <Link key={item.href} href={item.href}>
-                <motion.div
-                  variants={itemVariants}
-                  whileHover={{ y: -12 }}
-                  className="group relative h-full p-8 rounded-2xl bg-gradient-to-br from-white/8 to-white/[0.03] border border-white/15 backdrop-blur-xl shadow-xl hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 cursor-pointer overflow-hidden"
-                >
-                  {/* Premium gradient border effect on hover */}
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-500/0 via-orange-500/0 to-orange-500/0 group-hover:from-orange-500/10 group-hover:via-orange-500/5 group-hover:to-transparent transition-all duration-300" />
-                  
-                  {/* Glow effect */}
-                  <div className="absolute -inset-1 bg-gradient-to-br from-orange-500/0 to-orange-500/0 group-hover:from-orange-500/20 group-hover:to-transparent rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
+            {menuItems.map((item, index) => {
+              const Icon = item.icon
 
-                  <div className="relative z-10 flex flex-col h-full gap-4">
-                    {/* Icon */}
-                    <div className="text-6xl transform group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
+              return (
+                <Link key={item.href} href={item.href}>
+                  <motion.div
+                    variants={itemVariants}
+                    whileHover={{ y: -6 }}
+                    className="group relative h-full min-h-56 cursor-pointer overflow-hidden rounded-xl border border-white/10 bg-white/[0.035] p-7 shadow-lg shadow-black/20 transition-all duration-300 hover:border-orange-500/35 hover:bg-white/[0.055] hover:shadow-orange-500/10"
+                  >
+                    <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-70" />
 
-                    {/* Content */}
-                    <div className="flex-1 space-y-2">
-                      <h3 className="text-2xl font-bold text-foreground group-hover:text-orange-400 transition-colors duration-300">
-                        {item.title}
-                      </h3>
-                      <p className="text-foreground/60 leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
-                        {item.description}
-                      </p>
+                    <div className="relative z-10 flex h-full flex-col gap-5">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-lg border border-orange-500/25 bg-orange-500/10 text-orange-400 transition-colors duration-300 group-hover:border-orange-500/45 group-hover:bg-orange-500/15">
+                        <Icon className="h-6 w-6" aria-hidden="true" />
+                      </div>
+
+                      <div className="flex-1 space-y-2">
+                        <h3 className="text-2xl font-bold text-foreground transition-colors duration-300 group-hover:text-orange-400">
+                          {item.title}
+                        </h3>
+                        <p className="text-foreground/60 leading-relaxed transition-colors duration-300 group-hover:text-foreground/75">
+                          {item.description}
+                        </p>
+                      </div>
+
+                      <div className="flex items-center gap-2 text-sm font-semibold text-orange-500 transition-all duration-300 group-hover:gap-3">
+                        <span>Explore</span>
+                        <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
+                      </div>
                     </div>
-
-                    {/* Arrow Icon */}
-                    <div className="flex items-center gap-2 text-orange-500 group-hover:gap-3 transition-all duration-300">
-                      <span className="font-semibold">Explore</span>
-                      <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
-                    </div>
-                  </div>
-                </motion.div>
-              </Link>
-            ))}
+                  </motion.div>
+                </Link>
+              )
+            })}
           </motion.div>
         </div>
       </section>
