@@ -15,12 +15,21 @@ const Navbar = () => {
     setPathname(currentPathname)
   }, [currentPathname])
 
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 50)
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   const navItems = [
     { label: 'Home', href: '/' },
-    { label: 'AboutMe', href: '/about' },
+    { label: 'About Me', href: '/about' },
     { label: 'Experience', href: '/experience' },
     { label: 'Projects', href: '/projects' },
-    { label: 'Evidance', href: '/gallery' },
+    { label: 'Evidence', href: '/gallery' },
     { label: 'Certifications', href: '/certifications' },
     { label: 'Contact', href: '/contact' },
   ]
@@ -35,8 +44,6 @@ const Navbar = () => {
           ? 'bg-black/20 backdrop-blur-xl border-b border-white/10 shadow-2xl'
           : 'bg-transparent'
       }`}
-      onMouseMove={() => window.scrollY > 50 && setIsScrolled(true)}
-      onMouseLeave={() => setIsScrolled(window.scrollY > 50)}
     >
       <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8">
         {/* Desktop Layout */}
