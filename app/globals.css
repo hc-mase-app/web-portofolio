@@ -152,6 +152,29 @@
   .gradient-border {
     @apply relative before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:bg-gradient-to-br before:from-orange-500/50 before:to-transparent before:-z-10;
   }
+
+  .credential-scrollbar {
+    scrollbar-color: rgba(249, 115, 22, 0.65) rgba(255, 255, 255, 0.04);
+    scrollbar-width: thin;
+  }
+
+  .credential-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .credential-scrollbar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .credential-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(249, 115, 22, 0.65);
+    border: 2px solid #0f0f0f;
+    border-radius: 999px;
+  }
+
+  .credential-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(249, 115, 22, 0.9);
+  }
 }
 
 @keyframes float {
