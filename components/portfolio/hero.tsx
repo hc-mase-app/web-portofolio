@@ -56,7 +56,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="flex flex-wrap gap-4"
             >
-              <Link href="/projects">
+              <Link href="/yanfirdaus/projects">
                 <motion.button
                   whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(249, 115, 22, 0.4)' }}
                   whileTap={{ scale: 0.95 }}
@@ -65,7 +65,7 @@ const Hero = () => {
                   View My Work
                 </motion.button>
               </Link>
-              <Link href="/contact">
+              <Link href="/yanfirdaus/contact">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

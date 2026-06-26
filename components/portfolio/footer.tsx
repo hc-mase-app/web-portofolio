@@ -3,9 +3,9 @@
 import { motion } from 'framer-motion'
 import { portfolioData } from '@/lib/portfolio-data'
 
-const Footer = () => {
-  const currentYear = new Date().getFullYear()
+const copyrightYear = 2026
 
+const Footer = () => {
   return (
     <footer className="bg-background/80 backdrop-blur border-t border-border/10 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
@@ -118,7 +118,7 @@ const Footer = () => {
             className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-foreground/50"
           >
             <p>
-              &copy; {currentYear} {portfolioData.name}. All rights reserved.
+              &copy; {copyrightYear} {portfolioData.name}. All rights reserved.
             </p>
             <p>
               Designed & Built with <span className="text-orange-500">♥</span> for Excellence

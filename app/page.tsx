@@ -1,13 +1,5 @@
-'use client'
-
-import Navbar from '@/components/portfolio/navbar'
-import HomeLanding from '@/components/portfolio/home-landing'
+import ConsultingHomePage from '@/components/consulting/home-page'
 
 export default function Home() {
-  return (
-    <main className="w-full">
-      <Navbar />
-      <HomeLanding />
-    </main>
-  )
+  return <ConsultingHomePage />
 }

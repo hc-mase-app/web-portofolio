@@ -1,17 +1,5 @@
-'use client'
-
-import Navbar from '@/components/portfolio/navbar'
-import Contact from '@/components/portfolio/contact'
-import Footer from '@/components/portfolio/footer'
+import ConsultingContactPage from '@/components/consulting/contact-page'
 
 export default function ContactPage() {
-  return (
-    <main className="w-full">
-      <Navbar />
-      <div className="pt-20">
-        <Contact />
-      </div>
-      <Footer />
-    </main>
-  )
+  return <ConsultingContactPage />
 }

@@ -7,9 +7,18 @@ const geist = Geist({ subsets: ["latin"], variable: '--font-geist-sans' });
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: '--font-geist-mono' });
 
 export const metadata: Metadata = {
-  title: 'Yan Firdaus, S.H., CHRM., CPDA.',
-  description: 'HR Strategy & Organizational | Leadership Development - Empowering Leaders | Building HR Systems & Analytics.',
+  metadataBase: new URL('https://ym-id.com'),
+  title: {
+    default: 'YM-ID | Business, People & Digital Solutions',
+    template: '%s',
+  },
+  description: 'Solusi konsultasi bisnis dan organisasi, leadership development, website, serta digitalisasi untuk bisnis pemula dan organisasi berkembang.',
   keywords: [
+    'Business Consultant',
+    'Leadership Training',
+    'Website Development',
+    'Konsultan Organisasi',
+    'Konsultan HR',
     'HR Professional',
     'Human Capital Development',
     'HR Consultant',
@@ -23,11 +32,11 @@ export const metadata: Metadata = {
   creator: 'Yan Firdaus',
   openGraph: {
     type: 'website',
-    locale: 'en_US',
+    locale: 'id_ID',
     url: 'https://ym-id.com',
-    siteName: 'Yan Firdaus Portfolio',
-    title: 'Yan Firdaus - Head Human Capital Development',
-    description: 'Strategic HR professional with 15+ years of expertise in human capital development',
+    siteName: 'YM-ID',
+    title: 'YM-ID | Business, People & Digital Solutions',
+    description: 'Solusi praktis untuk mengembangkan bisnis, organisasi, pemimpin, tim, dan kehadiran digital.',
   },
   icons: {
     icon: [
@@ -67,7 +76,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="bg-background dark">
+    <html lang="id" className="bg-background dark" data-scroll-behavior="smooth" suppressHydrationWarning>
       <body className={`${geist.variable} ${geistMono.variable} font-sans antialiased bg-background text-foreground`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}

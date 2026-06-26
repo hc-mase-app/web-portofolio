@@ -1,12 +1,106 @@
+export const experienceData = [
+  {
+    company: 'PT Sarana Sukses Sejahtera & PT Gunungmas Sukses Makmur',
+    position: 'Head Human Capital Development',
+    period: 'May 2025 - Present',
+    location: 'Head Office – Jakarta Utara, Indonesia',
+    jobDescription: [
+      'Led end-to-end Human Capital functions covering manpower planning, workforce forecasting, recruitment, onboarding, employee induction, talent management, payroll administration, compensation & benefits, and employee services',
+      'Managed Industrial Relations activities including employee grievance handling, dispute resolution, disciplinary processes, labor compliance, and stakeholder engagement with local communities and external parties to maintain harmonious industrial relations',
+      'Oversaw General Affairs operations including office and facility management, transportation, accommodation, travel management, ticketing, employee welfare, and operational support services',
+      'Developed and implemented HR policies, Standard Operating Procedures (SOP), Work Instructions (IK), and workforce governance systems to strengthen organizational effectiveness',
+      'Designed and implemented talent development initiatives, including the Operator Development Program (ODP), Fresh Mechanic Development Program (FMDP), and leadership development programs to build sustainable talent pipelines and future leaders',
+      'Led HR digital transformation initiatives through the development and implementation of web-based HRIS and HCGA applications, including Leadership Activity Monitoring, Online Leave Management, Digital Employee Identification, Computer-Based Psychological Testing, Ticketing Management Systems, and HR Administrative Solutions',
+      'Led the Performance Review Meeting process by developing KPI monitoring frameworks, consolidating departmental performance data, and facilitating performance evaluations to support operational and business target achievement',
+    ],
+  },
+  {
+    company: 'PT Fajar Anugerah Dinamika (Hasnur Group) | Site Berau Coal',
+    position: 'HCGS Department Head',
+    period: 'March 2023 - May 2025',
+    location: 'Kalimantan Timur, Indonesia',
+    jobDescription: [
+      'Managed end-to-end Human Capital & General Affairs functions within mining operational environments, supporting workforce productivity, operational continuity, and business growth',
+      'Led annual budgeting, manpower forecasting, workforce planning, recruitment, onboarding, induction, talent development, performance management, payroll administration, and compensation & benefits programs aligned with operational and business requirements',
+      'Managed employee relations, industrial relations, grievance handling, stakeholder engagement, and dispute resolution, maintaining harmonious industrial relations and a stable employee relations climate',
+      'Oversaw General Affairs operations including office management, facility management, accommodation, transportation, catering, employee welfare programs, and operational workforce support services',
+      'Managed personnel administration, utility and asset management, site services, and operational support functions to enhance workforce satisfaction and operational effectiveness',
+      'Supervised civil construction projects, infrastructure development, building maintenance, and site facility management to ensure operational readiness and business continuity',
+      'Coordinated IT infrastructure support including network development, communication systems, hardware and software management, and site connectivity requirements to support operational efficiency',
+      'Ensured compliance with labor regulations, company policies, operational standards, and corporate governance requirements across all HCGA functions',
+    ],
+  },
+  {
+    company: 'PT Bahtera Putera Nusantara - Site Wahana Agung Sejahtera (WAS)',
+    position: 'HCGA Section Head',
+    period: '(Project-Based Assignment / Closed Project) August 2022 - December 2022',
+    location: 'Kalimantan Tengah, Indonesia',
+    jobDescription: [
+      'Supported workforce and HCGA operations through the successful completion of a project-based assignment',
+      'Managed employee relations, industrial relations, grievance handling, stakeholder engagement, and dispute resolution, maintaining harmonious industrial relations and a stable employee relations climate',
+      'Oversaw General Affairs operations including office management, facility management, accommodation, transportation, catering, employee welfare programs, and operational workforce support services',
+      'Managed personnel administration, utility and asset management, site services, and operational support functions to enhance workforce satisfaction and operational effectiveness',
+    ],
+  },
+  {
+    company: 'PT Electra Global (IUP)',
+    position: 'HR Manager',
+    period: 'August 2019 - May 2022',
+    location: 'Kalimantan Tengah, Indonesia',
+    jobDescription: [
+      'Led manpower forecasting, recruitment, onboarding, induction, performance management, payroll administration, and compensation & benefits programs aligned with operational and business requirements',
+      'Managed employee relations, industrial relations, grievance handling, stakeholder engagement, and dispute resolution, maintaining harmonious industrial relations and a stable employee relations climate',
+      'Oversaw General Affairs operations including office management, facility management, accommodation, transportation, catering, employee welfare programs, and operational workforce support services',
+    ],
+  },
+  {
+    company: 'PT Limoff Internasional Indonesia',
+    position: 'Acquisition Manager',
+    period: 'February 2016 - September 2018',
+    location: 'Bali, Indonesia',
+    jobDescription: [
+      'Managed merchant acquisition, business partnership development, and operational coordination.',
+      'Conducted market research, business development initiatives, and customer relationship management to support business growth and operational expansion.',
+      'In addition, supported recruitment activities, workforce planning, employee relations, and HR operational administration.',
+      'Assisted in handling Industrial Relations matters, employee performance monitoring, and manpower forecasting aligned with operational and business requirements.',
+    ],
+  },
+  {
+    company: 'Ramilta Realty Group (Ramita Villa Legian & Ubud Bali)',
+    position: 'Assistant Manager',
+    period: 'March 2014 - June 2017',
+    location: 'Bali, Indonesia',
+    jobDescription: [
+      'Managed project budgeting and cost estimation (RAB) for villa development projects, supporting planning, construction control, and budget monitoring activities',
+      'Coordinated the planning, design, and construction supervision of 10 villa units, consisting of 9 units in Ubud and 1 unit in Legian, Bali, ensuring project progress aligned with design specifications and development plans',
+      'Monitored project implementation, contractor activities, material utilization, and construction progress to support timely project completion and quality standards',
+      'Supported project documentation, promotional activities, and property publication initiatives to enhance project visibility and marketing effectiveness',
+      'Supported recruitment, manpower planning, employee relations, and Industrial Relations activities to ensure workforce availability and operational readiness throughout project development phases',
+    ],
+  },
+  {
+    company: 'iFive Store - Ambarukmo Plaza Yogyakarta',
+    position: 'Technical Support Specialist',
+    period: 'May 2010 - August 2013',
+    location: 'Yogyakarta, Indonesia',
+    jobDescription: [
+      'Provided technical support, troubleshooting, software installation, and hardware maintenance services.',
+      'Handled system diagnostics, technical repairs, customer support, and operational issue resolution.',
+      'Supported operational technical services, preventive maintenance activities, and system performance monitoring.',
+      'Assisted customer service coordination and technical operational reporting.',
+    ],
+  },
+]
+
 export const portfolioData = {
   name: 'Yan Firdaus, S.H., CHRM., CPDA',
   title: 'HR Strategy & Organizational | Performance | Leadership Development & Empowering Leaders | Building HR Systems & Analytics',
   subtitle: '',
   intro: 'Human Capital professional with 15+ years Experience and 10 Years of specialized experience in Human Capital Development, HCGA, and Organizational Development. Expert in HR digitalization, leadership development, and aligning HR strategies with business objectives to drive organizational effectiveness.',
-  image: '/gallery/pp.png',
+  image: '/consulting/yan-firdaus-professional-navy.jpg',
 
   about: {
-    description: 'Human Capital professional with more than 8 years of specialized experience in Human Capital, HCGA, and Organizational Development, supported by a total of 15 years of professional experience across mining, operational, and corporate environments. Experienced in Human Capital Development, Organizational Development, Industrial Relations, Recruitment & Talent Management, Leadership Development, HR Operations, workforce planning, HR system development, and General Affairs management.\n\nProven capability in developing HR systems, building web-based HR applications, handling industrial relations matters, and aligning HR strategies with business objectives to support organizational effectiveness and sustainable business growth. Successfully delivered leadership development programs for more than 250+ employees across multiple operational locations and organizational levels.',
+    description: 'Human Capital professional with more than 10 years of specialized experience in Human Capital, HCGA, and Organizational Development, supported by a total of 15 years of professional experience across mining, operational, and corporate environments. Experienced in Human Capital Development, Organizational Development, Industrial Relations, Recruitment & Talent Management, Leadership Development, HR Operations, workforce planning, HR system development, and General Affairs management.\n\nProven capability in developing HR systems, building web-based HR applications, handling industrial relations matters, and aligning HR strategies with business objectives to support organizational effectiveness and sustainable business growth. Successfully delivered leadership development programs for more than 250+ employees across multiple operational locations and organizational levels.',
     expertise: [
       {
         title: 'Human Capital Strategy',
@@ -36,103 +130,7 @@ export const portfolioData = {
     ],
   },
 
-  experience: [
-    {
-      company: 'PT Sarana Sukses Sejahtera & PT Gunungmas Sukses Makmur',
-      position: 'Head of Human Capital Development',
-      period: 'May 2025 – Present',
-      location: 'North Jakarta, Indonesia',
-      description: 'Lead Human Capital Development strategy and organizational development initiatives. Manage recruitment, talent management, leadership development, and performance management programs. Develop HR systems, SOPs, and people development strategies aligned with business objectives.',
-      keyContributions: [
-        'Built and implemented Integrated HR Management System (Web Base, Next.js, Node.js) for centralized HR operations and data management',
-        'Designed Leadership Activity Application and Employee Leave Request Application (web-based) to automate HR operational processes and enhance employee experience',
-        'Delivered comprehensive leadership development programs for 250+ employees across multiple operational locations and organizational levels',
-        'Delivered Fresh Development Program (FMDP) and Operator Development Program (ODP) for high school graduates',
-      ],
-    },
-    {
-      company: 'PT Fajar Anugerah Dinamika (Hasnur Group) – Site Lati PT Berau Coal',
-      position: 'HCGA Department Head',
-      period: 'March 2023 – May 2025',
-      location: 'East Kalimantan, Indonesia',
-      description: 'Managed end-to-end HCGA operations within mining operational environment. Led manpower planning, recruitment, industrial relations, compensation & benefits, and workforce management. Oversaw General Affairs operations including accommodation, transportation, facility management, and operational support. Managed Budgeting, forecasting, and operational workforce planning. Managed employee relations, compliance, and HR operational coordination.',
-      keyContributions: [
-        'Supported operational workforce management and manpower coordination within mining operational environment',
-        'Improved coordination of operational support services including transportation, accommodation, and employee operational facilities',
-        'Supported HR operational effectiveness and employee support processes within dynamic site operations.',
-        'Improved HR operational coordination and workforce support processes',
-      ],
-    },
-    {
-      company: 'PT Bahtera Putera Nusantara – Site Wahana Agung Sejahtera (WAS)',
-      position: 'HCGA Section Head',
-      period: 'August 2022 – December 2022',
-      location: 'Indonesia',
-      description: 'Managed HCGA operational activities within site operational environment. Handled manpower management, recruitment, industrial relations, General Affairs operations, transportation coordination, accommodation management, and operational workforce support.',
-      keyContributions: [
-        'Supported operational workforce management and manpower coordination on Closed Process Coal Mining Operation',
-        'Improved coordination of operational support services',
-        'Enhanced HR operational effectiveness and employee support processes',
-      ],
-    },
-    {
-      company: 'PT Electra Global – Coal Mining Operation',
-      position: 'HR Manager',
-      period: 'August 2019 – May 2022',
-      location: 'Central Kalimantan, Indonesia',
-      description: 'HR operational activities within operational and mining environments. Handled Industrial Relations matters, employee performance management processes, manpower forecasting, and workforce administration aligned with operational and business needs.',
-      keyContributions: [
-        'Improved HR administrative coordination and workforce management processes',
-        'Supported recruitment, manpower planning, and employee relations activities',
-        'Assisted Industrial Relations handling and employee performance management',
-        'Supported organizational effectiveness within mining operational environments',
-        'Supported manpower forecasting aligned with operational business requirements',
-      ],
-    },
-    {
-      company: 'PT Limoff Internasional Indonesia',
-      position: 'Acquisition Manager',
-      period: 'February 2016 – September 2018',
-      location: 'Bali, Indonesia',
-      description: 'Managed merchant acquisition, business partnership development, and operational coordination. Conducted market research, business development initiatives, and customer relationship management to support business growth and operational effectiveness. In addition, supported recruitment activities, workforce planning, employee relations, and HR operational administration. Assisted in handling Industrial Relations matters, employee performance monitoring, and manpower forecasting aligned with operational and business needs.',
-      keyContributions: [
-        'Drove merchant acquisition and business development initiatives',
-        'Supported recruitment and workforce planning activities',
-        'Assisted employee relations and HR operational processes',
-        'Supported manpower forecasting and operational coordination',
-        'Enhanced customer relationship management and service effectiveness',
-        'Enhanced customer relationship management and service effectiveness',
-      ],
-    },
-    {
-      company: 'Ramita Realty Group (Ramita Villa Legian & Ubud Bali)',
-      position: 'Assistant Manager',
-      period: 'March 2014 – June 2017',
-      location: 'Bali, Indonesia',
-      description: 'Supported operational management, business coordination, and Human Resources administration within dynamic operational environments. Managed operational reporting, workforce monitoring, employee administration, and coordination activities to support operational effectiveness and organizational performance.',
-      keyContributions: [
-        'Supported operational management and business coordination',
-        'Managed reporting and operational monitoring',
-        'Supported HR administration and employee coordination',
-        'Assisted manpower administration and operational activities',
-        'Enhanced customer relations and operational effectiveness',
-      ],
-    },
-    {
-      company: 'iFive Store, Ambarukmo Plaza Yogyakarta',
-      position: 'Technical Support Specialist',
-      period: 'March 2014 – June 2017',
-      location: 'Bali, Indonesia',
-      description: 'Supported operational management, business coordination, and Human Resources administration within dynamic operational environments. Managed operational reporting, workforce monitoring, employee administration, and coordination activities to support operational effectiveness and organizational performance.',
-      keyContributions: [
-        'Supported operational management and business coordination',
-        'Managed reporting and operational monitoring',
-        'Supported HR administration and employee coordination',
-        'Assisted manpower administration and operational activities',
-        'Enhanced customer relations and operational effectiveness',
-      ],
-    },
-  ],
+  experience: experienceData,
 
   projects: [
     {
@@ -430,13 +428,13 @@ export const portfolioData = {
     {
       degree: 'Bachelor of Law',
       institution: 'Atma Jaya University',
-      period: '2005 – 2010',
+      period: '2005 - 2010',
       location: 'Yogyakarta - Indonesia',
     },
     {
       degree: 'Senior High School',
       institution: 'SMAN 1 Tanjung Selor',
-      period: '2000 – 2002',
+      period: '2000 - 2002',
       location: 'Indonesia',
     },
   ],
@@ -515,6 +513,7 @@ export const portfolioData = {
     phone: '+62 817393994',
     location: 'Jakarta, Indonesia',
     website: 'www.ym-id.com',
+    linkedin: 'https://linkedin.com/in/yanfirdaus',
   },
 
   socialLinks: [

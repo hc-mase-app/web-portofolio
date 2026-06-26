@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { portfolioData } from '@/lib/portfolio-data'
+import { experienceData } from '@/lib/portfolio-data'
 
 const Experience = () => {
   const containerVariants = {
@@ -49,7 +49,7 @@ const Experience = () => {
           viewport={{ once: true }}
           className="space-y-8"
         >
-          {portfolioData.experience.map((job, index) => (
+          {experienceData.map((job, index) => (
             <motion.div
               key={index}
               variants={itemVariants}
@@ -57,7 +57,7 @@ const Experience = () => {
             >
               {/* Timeline Line and Dot */}
               <div className="hidden md:block absolute left-0 top-8 bottom-0 w-0.5 bg-gradient-to-b from-orange-500 to-orange-500/20">
-                {index !== portfolioData.experience.length - 1 && (
+                {index !== experienceData.length - 1 && (
                   <div className="absolute -left-2 top-0 w-4 h-4 rounded-full bg-orange-500 border-4 border-background" />
                 )}
               </div>
@@ -83,13 +83,11 @@ const Experience = () => {
                     </span>
                   </div>
 
-                  <p className="text-foreground/70 leading-relaxed text-justify">{job.description}</p>
-
-                  {job.keyContributions && (
+                  {job.jobDescription && (
                     <div className="mt-4 pt-4 border-t border-orange-500/20">
-                      <h4 className="text-sm font-semibold text-orange-500 mb-2">Key Contributions</h4>
+                      <h4 className="text-sm font-semibold text-orange-500 mb-2">Job Description</h4>
                       <ul className="space-y-2">
-                        {job.keyContributions.map((contrib, i) => (
+                        {job.jobDescription.map((description, i) => (
                           <motion.li
                             key={i}
                             initial={{ opacity: 0, x: -10 }}
@@ -99,7 +97,7 @@ const Experience = () => {
                             className="flex items-start gap-3 text-foreground/60 text-sm"
                           >
                             <span className="text-orange-500 mt-1 flex-shrink-0">✓</span>
-                            <span>{contrib}</span>
+                            <span>{description}</span>
                           </motion.li>
                         ))}
                       </ul>

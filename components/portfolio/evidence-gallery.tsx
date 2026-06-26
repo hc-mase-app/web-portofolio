@@ -9,7 +9,7 @@ import { X } from 'lucide-react'
 interface GalleryItem {
   id: number
   title: string
-  caption: string
+  caption?: string
   category: string
   image: string
 }

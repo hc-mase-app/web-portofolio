@@ -11,37 +11,37 @@ const HomeLanding = () => {
     {
       title: 'About',
       description: 'Professional profile and expertise',
-      href: '/about',
+      href: '/yanfirdaus/about',
       icon: UserRound,
     },
     {
       title: 'Experience',
       description: 'Career journey and achievements',
-      href: '/experience',
+      href: '/yanfirdaus/experience',
       icon: BriefcaseBusiness,
     },
     {
       title: 'Projects',
       description: 'Featured work and initiatives',
-      href: '/projects',
+      href: '/yanfirdaus/projects',
       icon: FolderKanban,
     },
     {
       title: 'Gallery',
       description: 'Visual evidence and moments',
-      href: '/gallery',
+      href: '/yanfirdaus/gallery',
       icon: Images,
     },
     {
       title: 'Certifications',
       description: 'Credentials and achievements',
-      href: '/certifications',
+      href: '/yanfirdaus/certifications',
       icon: Award,
     },
     {
       title: 'Contact',
       description: 'Get in touch',
-      href: '/contact',
+      href: '/yanfirdaus/contact',
       icon: Mail,
     },
   ]
@@ -62,7 +62,7 @@ const HomeLanding = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: 'easeOut' },
+      transition: { duration: 0.8, ease: 'easeOut' as const },
     },
   }
 
@@ -213,7 +213,7 @@ const HomeLanding = () => {
             viewport={{ once: true }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
-            {menuItems.map((item, index) => {
+            {menuItems.map((item) => {
               const Icon = item.icon
 
               return (
@@ -259,7 +259,10 @@ const HomeLanding = () => {
             <div className="text-foreground/60 text-sm">
               &copy; 2026 Yan Firdaus. All rights reserved.
             </div>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap justify-center gap-6">
+              <Link href="/" className="text-foreground/60 hover:text-orange-500 transition-colors text-sm">
+                Consulting Website
+              </Link>
               <Link href={`mailto:${portfolioData.contact.email}`} className="text-foreground/60 hover:text-orange-500 transition-colors text-sm">
                 Email
               </Link>
