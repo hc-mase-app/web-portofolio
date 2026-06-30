@@ -10,7 +10,7 @@ import {
   ShieldCheck,
 } from 'lucide-react'
 import { ConsultingShell } from './site-shell'
-import { HeroSceneImage } from './shared'
+import { ToolsLink3DVisual } from './three-d-visuals'
 
 type ShortLinkResult = {
   shortUrl: string
@@ -105,13 +105,7 @@ export default function UrlShortenerPage() {
             </p>
           </div>
           <div className="hidden justify-center lg:flex">
-            <HeroSceneImage
-              src="/consulting/hero-tools-concept.png"
-              alt="Konsep visual 3D halaman Tools YM-ID"
-              width={460}
-              height={290}
-              className="w-full max-w-[420px]"
-            />
+            <ToolsLink3DVisual />
           </div>
         </div>
       </section>

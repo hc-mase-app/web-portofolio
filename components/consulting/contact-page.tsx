@@ -3,7 +3,8 @@
 import { useMemo, useState } from 'react'
 import { Mail, MapPin, MessageCircle, Phone } from 'lucide-react'
 import { ConsultingShell } from './site-shell'
-import { HeroSceneImage, PageHero, PrimaryLink, SectionHeading, SecondaryLink } from './shared'
+import { PageHero, SectionHeading } from './shared'
+import { ContactOrbit3D } from './three-d-visuals'
 import { siteData } from '@/lib/site-data'
 
 export default function ConsultingContactPage() {
@@ -29,21 +30,7 @@ export default function ConsultingContactPage() {
         label="CONTACT"
         title="Mari Diskusikan Kebutuhan Anda"
         description="Ceritakan kondisi bisnis atau organisasi Anda. Percakapan awal membantu kita memahami kebutuhan dan menentukan langkah yang paling relevan."
-        actions={
-          <>
-            <PrimaryLink href={siteData.whatsapp} external>Chat on WhatsApp</PrimaryLink>
-            <SecondaryLink href="/services">Review Services</SecondaryLink>
-          </>
-        }
-        visual={
-          <HeroSceneImage
-            src="/consulting/hero-contact-concept.png"
-            alt="Konsep visual 3D halaman Contact YM-ID"
-            width={770}
-            height={690}
-            className="w-full max-w-[620px]"
-          />
-        }
+        visual={<ContactOrbit3D />}
       />
       <section className="bg-[#fbfaf7] px-5 py-16 text-[#07182c] lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.75fr_1.25fr]">

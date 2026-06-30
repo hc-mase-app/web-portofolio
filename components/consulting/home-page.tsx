@@ -2,7 +2,8 @@
 import Link from 'next/link'
 import { ArrowRight, BookOpen, Calculator, Check, Laptop, Lightbulb, Target, TrendingUp } from 'lucide-react'
 import { ConsultingShell } from './site-shell'
-import { ConsultationCta, HeroSceneImage, PrimaryLink, SectionHeading, SecondaryLink } from './shared'
+import { ConsultationCta, PrimaryLink, SectionHeading, SecondaryLink } from './shared'
+import { Strategy3DScene } from './three-d-visuals'
 import { services, siteData } from '@/lib/site-data'
 
 export default function ConsultingHomePage() {
@@ -38,15 +39,7 @@ export default function ConsultingHomePage() {
               </a>
             </div>
           </div>
-          <div className="hidden justify-center lg:flex">
-            <HeroSceneImage
-              src="/consulting/hero-home-concept.png"
-              alt="Konsep visual 3D halaman Home YM-ID"
-              width={1070}
-              height={820}
-              className="w-full max-w-[820px]"
-            />
-          </div>
+          <Strategy3DScene />
         </div>
         <div className="mx-auto max-w-7xl pb-12">
           <div className="grid max-w-4xl gap-5 border-t border-white/15 pt-7 sm:grid-cols-3">

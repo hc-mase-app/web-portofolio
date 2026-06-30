@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import { Code2, Lightbulb, Target, Users } from 'lucide-react'
 import { ConsultingShell } from './site-shell'
-import { ConsultationCta, HeroSceneImage, PageHero, PrimaryLink, SectionHeading, SecondaryLink } from './shared'
+import { ConsultationCta, PageHero, PrimaryLink, SectionHeading } from './shared'
+import { AboutIdentity3D } from './three-d-visuals'
 import { principles, siteData, workSteps } from '@/lib/site-data'
 
 export default function ConsultingAboutPage() {
@@ -11,21 +12,7 @@ export default function ConsultingAboutPage() {
         label="ABOUT"
         title="About YM-ID"
         description="Kami hadir sebagai partner konsultasi bisnis, people development, dan solusi digital untuk membantu organisasi membangun fondasi yang lebih tertata dan siap bertumbuh."
-        actions={
-          <>
-            <PrimaryLink href="/contact">Start a Conversation</PrimaryLink>
-            <SecondaryLink href="/services">Explore Services</SecondaryLink>
-          </>
-        }
-        visual={
-          <HeroSceneImage
-            src="/consulting/hero-about-concept.png"
-            alt="Konsep visual 3D halaman About YM-ID"
-            width={1010}
-            height={760}
-            className="w-full max-w-[720px]"
-          />
-        }
+        visual={<AboutIdentity3D />}
       />
 
       <section className="bg-[#fbfaf7] px-5 py-12 lg:px-8 lg:py-16">

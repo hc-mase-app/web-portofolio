@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, BookOpen, ExternalLink, FileText, GraduationCap, Info, Laptop, Search } from 'lucide-react'
+import { ArrowRight, BookOpen, ExternalLink, GraduationCap, Info, Laptop, Search } from 'lucide-react'
 import { ConsultingShell } from './site-shell'
-import { ConsultationCta, HeroSceneImage, PageHero, PrimaryLink, SectionHeading, SecondaryLink } from './shared'
+import { ConsultationCta, PageHero, SectionHeading } from './shared'
 import { Resource3DIcon } from './three-d-visuals'
 import { leadershipInsights, siteData } from '@/lib/site-data'
 
@@ -19,21 +19,6 @@ export default function ConsultingResourcesPage() {
         label="RESOURCES"
         title="Sumber Daya Praktis untuk Bisnis, Organisasi, dan Pemimpin"
         description="Temukan alat bantu, istilah, dan wawasan pilihan untuk membantu Anda memahami pengelolaan bisnis, pengembangan manusia, kepemimpinan, dan solusi digital."
-        actions={
-          <>
-            <PrimaryLink href="/resources/kamus-hr">Open HR Dictionary</PrimaryLink>
-            <SecondaryLink href="/resources/cv-ats-generator">Try CV ATS Generator</SecondaryLink>
-          </>
-        }
-        visual={
-          <HeroSceneImage
-            src="/consulting/hero-resources-concept.png"
-            alt="Konsep visual 3D halaman Resources YM-ID"
-            width={725}
-            height={500}
-            className="w-full max-w-[620px]"
-          />
-        }
       />
 
       <section className="bg-[#fbfaf7] px-5 py-10 lg:px-8">

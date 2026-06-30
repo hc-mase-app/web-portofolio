@@ -1,7 +1,7 @@
-import { Check, ClipboardList, FileText, Laptop, Network, Search, UserRound, Users } from 'lucide-react'
+import { Check, ClipboardList, FileText, Search, Users } from 'lucide-react'
 import Link from 'next/link'
 import { ConsultingShell } from './site-shell'
-import { ConsultationCta, HeroSceneImage, PageHero, PrimaryLink, SectionHeading, SecondaryLink } from './shared'
+import { ConsultationCta, PageHero, SectionHeading } from './shared'
 import { ServicesPillars3D } from './three-d-visuals'
 import { services } from '@/lib/site-data'
 
@@ -19,21 +19,6 @@ export default function ConsultingServicesPage() {
         label="SERVICES"
         title="Solusi yang Dirancang Sesuai Kebutuhan Anda"
         description="Kami menyediakan layanan konsultasi, pengembangan manusia, dan solusi digital untuk membantu bisnis pemula serta organisasi berkembang membangun fondasi yang lebih tertata dan siap bertumbuh."
-        actions={
-          <>
-            <PrimaryLink href="/contact">Discuss Your Needs</PrimaryLink>
-            <SecondaryLink href="/resources">See Practical Resources</SecondaryLink>
-          </>
-        }
-        visual={
-          <HeroSceneImage
-            src="/consulting/hero-services-concept.png"
-            alt="Konsep visual 3D halaman Services YM-ID"
-            width={1125}
-            height={760}
-            className="w-full max-w-[760px]"
-          />
-        }
       />
 
       <section className="bg-[#fbfaf7] px-5 py-12 lg:px-8">
