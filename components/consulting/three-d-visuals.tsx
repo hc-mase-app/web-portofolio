@@ -300,8 +300,9 @@ export function ResourcesHero3D() {
   )
 }
 
-export function Resource3DIcon({ type }: { type: 'tax' | 'dictionary' | 'cv' | 'insight' }) {
+export function Resource3DIcon({ type }: { type: 'tax' | 'dictionary' | 'cv' | 'insight' | 'url' }) {
   const config = {
+    url: [Link2, 'URL'],
     tax: [Calculator, 'TAX'],
     dictionary: [BookOpen, 'HR'],
     cv: [FileCheck2, 'CV'],

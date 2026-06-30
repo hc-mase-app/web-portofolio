@@ -26,7 +26,6 @@ const navItems = [
     label: 'RESOURCES',
     href: '/resources',
     children: [
-      { label: 'Kamus HR', href: '/resources/kamus-hr' },
       { label: 'Business & Leadership Insights', href: '/resources#insights' },
     ],
   },
@@ -37,6 +36,7 @@ const navItems = [
       { label: 'URL Shortener', href: '/tools/url-shortener' },
       { label: 'CV ATS Generator', href: '/resources/cv-ats-generator' },
       { label: 'Salary & Tax Calculator', href: '/resources/salary-tax-calculator' },
+      { label: 'Kamus HR', href: '/resources/kamus-hr' },
     ],
   },
   { label: 'CONTACT', href: '/contact' },

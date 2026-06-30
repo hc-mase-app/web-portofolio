@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, BookOpen, ExternalLink, GraduationCap, Info, Laptop, Search } from 'lucide-react'
+import { ArrowRight, BookOpen, GraduationCap, Info, Laptop, Search } from 'lucide-react'
 import { ConsultingShell } from './site-shell'
-import { ConsultationCta, PageHero, SectionHeading } from './shared'
-import { Resource3DIcon, ResourcesHero3D } from './three-d-visuals'
-import { leadershipInsights, siteData } from '@/lib/site-data'
+import { ConsultationCta, PageHero } from './shared'
+import { ResourcesHero3D } from './three-d-visuals'
+import { leadershipInsights } from '@/lib/site-data'
 
 const insightCards = [
   ['/consulting/insight-organization.png', 'ORGANIZATION', 'Cara Menyusun Struktur Organisasi untuk Bisnis yang Berkembang', 'Panduan praktis menyusun struktur organisasi agar lebih jelas, efektif, dan siap mendukung pertumbuhan bisnis.'],
@@ -18,37 +18,9 @@ export default function ConsultingResourcesPage() {
       <PageHero
         label="RESOURCES"
         title="Sumber Daya Praktis untuk Bisnis, Organisasi, dan Pemimpin"
-        description="Temukan alat bantu, istilah, dan wawasan pilihan untuk membantu Anda memahami pengelolaan bisnis, pengembangan manusia, kepemimpinan, dan solusi digital."
+        description="Temukan wawasan pilihan untuk membantu Anda memahami pengelolaan bisnis, pengembangan manusia, kepemimpinan, dan solusi digital."
         visual={<ResourcesHero3D />}
       />
-
-      <section className="bg-[#fbfaf7] px-5 py-10 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <SectionHeading title="Jelajahi Resources" />
-          <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-            {[
-              ['tax', 'Salary & Tax Calculator', 'Hitung estimasi PPh 21, potongan BPJS, JHT, JP, dan perkiraan take home pay bulanan.', siteData.taxCalculator, 'BUKA KALKULATOR'],
-              ['dictionary', 'KAMUS HR', 'Pelajari istilah Human Resources, organisasi, kepemimpinan, dan ketenagakerjaan dalam bahasa yang sederhana dan mudah dipahami.', '/resources/kamus-hr', 'BUKA KAMUS HR'],
-              ['cv', 'CV ATS Generator', 'Buat CV satu kolom yang lebih mudah dibaca ATS dari identitas, pengalaman kerja, skill, dan target posisi.', '/resources/cv-ats-generator', 'BUAT CV ATS'],
-              ['insight', 'Business & Leadership Insights', 'Baca artikel praktis yang dikembangkan dari pengalaman profesional dan materi pembelajaran pilihan.', '#insights', 'LIHAT SEMUA INSIGHT'],
-            ].map(([type, title, description, href, action], index) => {
-              const external = String(href).startsWith('http')
-              return (
-                <article key={String(title)} className={`rounded-lg border bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-[0_18px_35px_rgba(15,23,42,0.12)] ${index === 1 || index === 2 ? 'border-[#d99a22]' : 'border-slate-200'}`}>
-                  <Resource3DIcon type={type as 'tax' | 'dictionary' | 'cv' | 'insight'} />
-                  <h2 className="mt-3 text-xl font-bold">{String(title)}</h2>
-                  <p className="mt-3 min-h-28 text-sm leading-7 text-slate-700">{String(description)}</p>
-                  {external ? (
-                    <a href={String(href)} target="_blank" rel="noreferrer" className="mt-5 flex items-center justify-center gap-2 rounded-md border border-[#d99a22] px-4 py-2.5 text-xs font-bold text-[#c88916]">{String(action)} <ExternalLink className="h-4 w-4" /></a>
-                  ) : (
-                    <Link href={String(href)} className={`mt-5 flex items-center justify-center gap-2 rounded-md px-4 py-2.5 text-xs font-bold ${index === 1 || index === 2 ? 'bg-[#d99a22] text-white' : 'border border-[#d99a22] text-[#c88916]'}`}>{String(action)} <ArrowRight className="h-4 w-4" /></Link>
-                  )}
-                </article>
-              )
-            })}
-          </div>
-        </div>
-      </section>
 
       <section id="insights" className="scroll-mt-24 bg-[radial-gradient(circle_at_50%_20%,#0b3554_0%,#06172a_72%)] px-5 py-10 text-white lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1fr_0.28fr]">
@@ -88,20 +60,6 @@ export default function ConsultingResourcesPage() {
             <p className="mt-4 text-sm leading-6 text-white/75">Insights menampilkan sebagian konsep untuk tujuan edukasi. Modul lengkap, studi kasus, latihan, model percakapan, dan worksheet tersedia secara eksklusif dalam program pelatihan.</p>
             <Link href="/services#leadership-people" className="mt-5 inline-flex rounded border border-[#d99a22] px-4 py-2.5 text-xs font-bold text-[#e1a126]">LIHAT PROGRAM TRAINING</Link>
           </aside>
-        </div>
-      </section>
-
-      <section className="bg-[#fbfaf7] px-5 py-9 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <SectionHeading title="Temukan Istilah dengan Mudah" />
-          <Link href="/resources/kamus-hr" className="mx-auto mt-5 flex max-w-3xl items-center gap-3 rounded-lg border border-slate-300 bg-white px-5 py-3 text-sm text-slate-400"><Search className="h-5 w-5 text-[#07182c]" />Cari istilah, misalnya: Coaching, Feedback, atau Situational Leadership...</Link>
-          <div className="mt-4 flex flex-wrap justify-center gap-2">
-            {['Human Capital', 'Leadership', 'Coaching', 'Learning & Development', 'Organization Development'].map((item) => <span key={item} className="rounded-md border border-slate-300 bg-white px-5 py-2 text-xs">{item}</span>)}
-          </div>
-          <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-            {['Empowering Leadership', 'Self Leadership', 'Coaching', 'Mentoring', 'Active Listening', 'Effective Feedback'].map((item) => <div key={item} className="flex min-h-24 items-center justify-center rounded-md border border-slate-300 bg-white p-3 text-center text-xs font-bold">{item}</div>)}
-          </div>
-          <div className="mt-5 text-center"><Link href="/resources/kamus-hr" className="inline-flex items-center gap-3 rounded-md border border-[#d99a22] px-10 py-2.5 text-xs font-bold text-[#c88916]">JELAJAHI KAMUS HR <ArrowRight className="h-4 w-4" /></Link></div>
         </div>
       </section>
 
