@@ -3,7 +3,7 @@ import { Code2, Lightbulb, Target, Users } from 'lucide-react'
 import { ConsultingShell } from './site-shell'
 import { ConsultationCta, PageHero, PrimaryLink, SectionHeading } from './shared'
 import { AboutIdentity3D } from './three-d-visuals'
-import { principles, siteData, workSteps } from '@/lib/site-data'
+import { principles, siteData} from '@/lib/site-data'
 
 export default function ConsultingAboutPage() {
   return (
@@ -19,14 +19,15 @@ export default function ConsultingAboutPage() {
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
           <div>
             <h2 className="text-3xl font-bold">Tentang Kami</h2>
-            <p className="mt-6 text-sm leading-8 text-slate-700">
-              Layanan konsultasi ini dibangun dari pengalaman dalam mengelola organisasi,
+            <p className="mt-6 text-sm leading-8 text-slate-700 text-justify">
+              YM-ID merupakan penyedia layanan Business, People & Digital Solutions yang membantu organisasi 
+              meningkatkan kinerja melalui strategi bisnis, pengembangan SDM, kepemimpinan, dan solusi digital.
+            </p> 
+            <p className="mt-6 text-sm leading-8 text-slate-700 text-justify">  
+              Berbekal pengalaman dalam pengembangan organisasi, Human Capital, Leadership Development,
+              dan transformasi proses kerja, kami menghadirkan solusi yang praktis, terukur, dan disesuaikan dengan kebutuhan setiap organisasi,
               mengembangkan sumber daya manusia, meningkatkan kemampuan kepemimpinan, serta
               menciptakan solusi digital yang mendukung proses kerja.
-            </p>
-            <p className="mt-5 text-sm leading-8 text-slate-700">
-              Kami percaya bahwa setiap bisnis memiliki kebutuhan yang berbeda. Karena itu,
-              setiap solusi dirancang secara praktis, bertahap, dan disesuaikan dengan kondisi nyata organisasi.
             </p>
           </div>
           <div className="relative mx-auto flex h-72 w-full max-w-lg items-end justify-center overflow-hidden rounded-3xl bg-[radial-gradient(circle,#f1ede6_0%,#fff_65%)]">
@@ -42,7 +43,7 @@ export default function ConsultingAboutPage() {
         </div>
       </section>
 
-      <section className="bg-[radial-gradient(circle_at_50%_20%,#0b3554_0%,#06172a_72%)] px-5 py-10 text-white lg:px-8">
+  <section className="bg-[radial-gradient(circle_at_50%_20%,#0b3554_0%,#06172a_72%)] px-5 py-10 text-white lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeading title="Prinsip Kami" dark />
           <div className="mt-8 grid gap-5 md:grid-cols-3">
@@ -58,6 +59,8 @@ export default function ConsultingAboutPage() {
           </div>
         </div>
       </section>
+
+      
 
       <section className="bg-[#fbfaf7] px-5 py-12 lg:px-8">
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
@@ -83,22 +86,7 @@ export default function ConsultingAboutPage() {
         </div>
       </section>
 
-      <section className="bg-[#f1f3f5] px-5 py-10 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <SectionHeading title="Cara Kami Bekerja" />
-          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            {workSteps.map((step) => {
-              const Icon = step.icon
-              return (
-                <div key={step.number} className="flex gap-4">
-                  <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#061f36] text-white"><Icon className="h-7 w-7" /></div>
-                  <div><p className="text-2xl font-bold text-[#d99a22]">{step.number}</p><h3 className="font-bold">{step.title}</h3><p className="mt-2 text-xs leading-5 text-slate-600">{step.description}</p></div>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      </section>
+      
 
       <ConsultationCta title="Mari Membangun Solusi yang Sesuai dengan Kebutuhan Anda" description="Ceritakan kebutuhan bisnis atau organisasi Anda dan tentukan langkah awal yang paling tepat bersama kami." />
     </ConsultingShell>

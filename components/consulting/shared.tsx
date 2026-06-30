@@ -32,7 +32,7 @@ export function PageHero({
             {label}
           </span>
           <h1 className="mt-10 max-w-3x1 text-3xl font-bold leading-[1.04] sm:text-4xl lg:text-[3.8rem]">{title}</h1>
-          <p className="mt-3 max-w-2xl text-base leading-8 text-white/80">{description}</p>
+          <p className="mt-3 max-w-2xl text-base leading-8 text-white/80 text-justify">{description}</p>
           {actions ? <div className="mt-8 flex flex-wrap gap-4">{actions}</div> : null}
         </div>
         {visual && <div className="hidden justify-center lg:flex">{visual}</div>}

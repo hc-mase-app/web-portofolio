@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, BookOpen, Calculator, Check, Laptop, Lightbulb, Target, TrendingUp } from 'lucide-react'
+import { ArrowRight, Check, Lightbulb, Target, TrendingUp } from 'lucide-react'
 import { ConsultingShell } from './site-shell'
 import { ConsultationCta, PrimaryLink, SectionHeading, SecondaryLink } from './shared'
 import { Strategy3DScene } from './three-d-visuals'
 import { services, siteData } from '@/lib/site-data'
+import {workSteps} from '@/lib/site-data'
 
 export default function ConsultingHomePage() {
   const heroMetrics = [
@@ -41,7 +42,7 @@ export default function ConsultingHomePage() {
             <h1 className="mt-7 text-3xl font-bold leading-tight drop-shadow-[0_3px_16px_rgba(0,0,0,0.45)] sm:text-4xl lg:text-[3.2rem]">
               Transformasi bisnis dimulai dari strategi, manusia, dan sistem yang tepat.
             </h1>
-            <p className="mt-6 max-w-2xl text-base leading-8 text-white/82">
+            <p className="mt-6 max-w-2xl text-base leading-8 text-white/82 text-justify">
               YM-ID membantu bisnis dan organisasi menata fondasi, mengembangkan pemimpin dan tim,
               menemukan talenta yang tepat, serta membangun solusi digital yang mendukung pertumbuhan.
             </p>
@@ -119,7 +120,7 @@ export default function ConsultingHomePage() {
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#e1a126]">Why YM-ID</p>
             <h2 className="mt-4 text-3xl font-bold leading-tight">Satu partner untuk strategi, people, dan sistem digital.</h2>
-            <p className="mt-5 text-sm leading-7 text-white/70">
+            <p className="mt-5 text-sm leading-7 text-white/70 text-justify">
               Banyak organisasi tidak hanya membutuhkan ide, tetapi juga struktur, eksekusi, dan alat kerja yang bisa dipakai. YM-ID menghubungkan tiga hal itu agar perubahan lebih mudah dijalankan.
             </p>
           </div>
@@ -146,14 +147,17 @@ export default function ConsultingHomePage() {
         <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2">
           <div>
             <h2 className="text-3xl font-bold">Tentang Konsultan</h2>
-            <p className="mt-5 text-sm leading-7 text-slate-700">
-              Dipimpin oleh Yan Firdaus, praktisi dan konsultan berpengalaman dalam pengembangan
+            <p className="mt-5 text-sm leading-7 text-slate-700 text-justify">
+              Dipimpin oleh praktisi dan konsultan berpengalaman dalam pengembangan
               organisasi, pengelolaan SDM, leadership training, coaching and counseling, serta
               digitalisasi proses kerja.
             </p>
-            <p className="mt-5 text-sm leading-7 text-slate-700">
+            <p className="mt-5 text-sm leading-7 text-slate-700 text-justify">
               Kami membantu bisnis pemula dan organisasi berkembang membangun fondasi yang lebih
-              tertata, kompeten, dan siap bertumbuh.
+              tertata, kompeten, dan siap bertumbuh. 
+              Kami percaya bahwa setiap Pelaku Bisnis atau Personal memiliki tantangan yang berbeda. Karena itu, 
+              setiap pendekatan dirancang berdasarkan kondisi nyata, tujuan bisnis, 
+              dan tahap pertumbuhan organisasi agar memberikan dampak yang berkelanjutan.
             </p>
             <div className="mt-7"><SecondaryLink href="/about">KENALI KAMI</SecondaryLink></div>
           </div>
@@ -163,30 +167,24 @@ export default function ConsultingHomePage() {
         </div>
       </section>
 
-      <section className="bg-[radial-gradient(circle_at_50%_20%,#0b3554_0%,#06172a_72%)] px-5 py-10 text-white lg:px-8">
+
+      <section className="bg-[#f1f3f5] px-5 py-10 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <SectionHeading title="Tools dan Resources Praktis" dark />
-          <div className="mt-8 grid gap-4 lg:grid-cols-3">
-            {[
-              [Calculator, 'Tools', 'Gunakan URL Shortener, CV ATS Generator, Salary Calculator, dan Kamus HR.', '/tools', 'Buka Tools'],
-              [BookOpen, 'Business & Leadership Insights', 'Baca insight praktis untuk bisnis, leadership, people development, dan organisasi.', '/resources', 'Baca Resources'],
-              [Lightbulb, 'Mulai dari Diskusi', 'Ceritakan kebutuhan utama organisasi Anda dan tentukan langkah yang paling relevan.', '/contact', 'Hubungi Kami'],
-            ].map(([Icon, title, description, href, action]) => {
-              const ItemIcon = Icon as typeof Laptop
+          <SectionHeading title="Cara Kami Bekerja" />
+          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            {workSteps.map((step) => {
+              const Icon = step.icon
               return (
-                <article key={String(title)} className="flex gap-5 rounded-lg border border-white/20 bg-white/[0.03] p-5">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 border-[#d99a22] text-[#d99a22]"><ItemIcon className="h-7 w-7" /></div>
-                  <div>
-                    <h3 className="font-bold">{String(title)}</h3>
-                    <p className="mt-2 text-xs leading-5 text-white/70">{String(description)}</p>
-                    <Link href={String(href)} className="mt-3 inline-flex items-center gap-2 text-xs font-bold text-[#e1a126]">{String(action)} <ArrowRight className="h-4 w-4" /></Link>
-                  </div>
-                </article>
+                <div key={step.number} className="flex gap-4">
+                  <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#061f36] text-white"><Icon className="h-7 w-7" /></div>
+                  <div><p className="text-2xl font-bold text-[#d99a22]">{step.number}</p><h3 className="font-bold">{step.title}</h3><p className="mt-2 text-xs leading-5 text-slate-600">{step.description}</p></div>
+                </div>
               )
             })}
           </div>
         </div>
       </section>
+
 
       <ConsultationCta title="Mari Diskusikan Kebutuhan Bisnis dan Organisasi Anda" description="Mulai dari tantangan yang paling penting, lalu tentukan langkah yang paling tepat." />
     </ConsultingShell>
