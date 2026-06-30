@@ -37,9 +37,9 @@ function validateUrl(value: string) {
 
 const toolCards = [
   ['url', 'URL Shortener', 'Pendekkan link panjang, gunakan custom alias, buat QR Code, dan pantau click counter.', '/tools/url-shortener', 'BUKA URL SHORTENER'],
-  ['cv', 'CV ATS Generator', 'Buat CV satu kolom yang lebih mudah dibaca ATS dari identitas, pengalaman kerja, skill, dan target posisi.', '/resources/cv-ats-generator', 'BUAT CV ATS'],
-  ['tax', 'Salary & Tax Calculator', 'Hitung estimasi PPh 21, potongan BPJS, JHT, JP, dan perkiraan take home pay bulanan.', '/resources/salary-tax-calculator', 'BUKA KALKULATOR'],
-  ['dictionary', 'KAMUS HR', 'Pelajari istilah Human Resources, organisasi, kepemimpinan, dan ketenagakerjaan dengan bahasa sederhana.', '/resources/kamus-hr', 'BUKA KAMUS HR'],
+  ['cv', 'CV ATS Generator', 'Buat CV satu kolom yang lebih mudah dibaca ATS dari identitas, pengalaman kerja, skill, dan target posisi.', '/tools/cv-ats-generator', 'BUAT CV ATS'],
+  ['tax', 'Salary & Tax Calculator', 'Hitung estimasi PPh 21, potongan BPJS, JHT, JP, dan perkiraan take home pay bulanan.', '/tools/salary-tax-calculator', 'BUKA KALKULATOR'],
+  ['dictionary', 'KAMUS HR', 'Pelajari istilah Human Resources, organisasi, kepemimpinan, dan ketenagakerjaan dengan bahasa sederhana.', '/tools/kamus-hr', 'BUKA KAMUS HR'],
 ] as const
 
 export default function UrlShortenerPage() {

@@ -31,12 +31,12 @@ const navItems = [
   },
   {
     label: 'TOOLS',
-    href: '/tools/url-shortener',
+    href: '/tools',
     children: [
       { label: 'URL Shortener', href: '/tools/url-shortener' },
-      { label: 'CV ATS Generator', href: '/resources/cv-ats-generator' },
-      { label: 'Salary & Tax Calculator', href: '/resources/salary-tax-calculator' },
-      { label: 'Kamus HR', href: '/resources/kamus-hr' },
+      { label: 'CV ATS Generator', href: '/tools/cv-ats-generator' },
+      { label: 'Salary & Tax Calculator', href: '/tools/salary-tax-calculator' },
+      { label: 'Kamus HR', href: '/tools/kamus-hr' },
     ],
   },
   { label: 'CONTACT', href: '/contact' },
