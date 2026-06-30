@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ArrowRight, BookOpen, ExternalLink, GraduationCap, Info, Laptop, Search } from 'lucide-react'
 import { ConsultingShell } from './site-shell'
 import { ConsultationCta, PageHero, SectionHeading } from './shared'
-import { Resource3DIcon } from './three-d-visuals'
+import { Resource3DIcon, ResourcesHero3D } from './three-d-visuals'
 import { leadershipInsights, siteData } from '@/lib/site-data'
 
 const insightCards = [
@@ -19,6 +19,7 @@ export default function ConsultingResourcesPage() {
         label="RESOURCES"
         title="Sumber Daya Praktis untuk Bisnis, Organisasi, dan Pemimpin"
         description="Temukan alat bantu, istilah, dan wawasan pilihan untuk membantu Anda memahami pengelolaan bisnis, pengembangan manusia, kepemimpinan, dan solusi digital."
+        visual={<ResourcesHero3D />}
       />
 
       <section className="bg-[#fbfaf7] px-5 py-10 lg:px-8">

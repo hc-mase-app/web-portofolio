@@ -217,6 +217,89 @@ export function ServicesPillars3D() {
   )
 }
 
+export function ServicesHero3D() {
+  const items = [
+    [BarChart3, 'Strategy'],
+    [Users, 'People'],
+    [Search, 'Recruitment'],
+    [Layers3, 'Systems'],
+  ] as const
+
+  return (
+    <div className="relative mx-auto hidden h-[420px] w-full max-w-[620px] items-end justify-center lg:flex">
+      <div className="absolute inset-0 rounded-[999px] bg-[radial-gradient(circle,rgba(217,154,34,0.16),transparent_62%)] blur-2xl" />
+      <GlowRing className="left-[6%] top-[47%] h-28 w-[88%] rotate-[-8deg]" />
+      <GlowRing className="left-[18%] top-[55%] h-20 w-[64%] rotate-[10deg]" />
+      <div className="absolute bottom-6 h-20 w-[92%] rounded-[50%] border border-[#d99a22]/35 bg-black/10 shadow-[0_0_42px_rgba(217,154,34,0.24)]" />
+      <div className="grid w-full grid-cols-4 items-end gap-4 px-2">
+        {items.map(([Icon, label], index) => (
+          <motion.div
+            key={label}
+            animate={{ y: [0, index % 2 ? -12 : -6, 0] }}
+            transition={{ ...floatTransition, duration: 4.4 + index * 0.25 }}
+            className="relative flex h-72 items-end justify-center"
+          >
+            <div className="absolute bottom-0 h-10 w-28 rounded-[50%] bg-[#d99a22]/30 blur-md" />
+            <div className="relative flex h-64 w-full max-w-[124px] flex-col items-center justify-center rounded-[42%] border border-white/30 bg-white/[0.07] px-4 text-center text-white shadow-[inset_0_0_34px_rgba(255,255,255,0.13),0_24px_54px_rgba(0,0,0,0.26)] backdrop-blur-md">
+              <div className="absolute inset-x-3 bottom-4 h-12 rounded-[50%] border border-[#d99a22]/45" />
+              <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-[#d99a22] text-[#07182c] shadow-[0_16px_34px_rgba(217,154,34,0.34)]">
+                <Icon className="h-10 w-10" />
+              </div>
+              <p className="mt-6 text-sm font-extrabold">{label}</p>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export function ResourcesHero3D() {
+  const tiles = [
+    [BookOpen, 'HR'],
+    [FileCheck2, 'CV'],
+    [Calculator, 'TAX'],
+    [BarChart3, 'INS'],
+  ] as const
+
+  return (
+    <div className="relative mx-auto hidden h-[420px] w-full max-w-[620px] items-center justify-center lg:flex">
+      <div className="absolute h-72 w-[520px] rounded-[999px] bg-[radial-gradient(circle,rgba(217,154,34,0.17),transparent_66%)] blur-2xl" />
+      <GlowRing className="left-[10%] top-[28%] h-36 w-[80%] rotate-[-13deg]" />
+      <GlowRing className="left-[20%] top-[38%] h-24 w-[60%] rotate-[14deg]" />
+      <div className="absolute bottom-16 h-16 w-80 rounded-[50%] border border-[#d99a22]/35 bg-black/10 shadow-[0_0_34px_rgba(217,154,34,0.24)]" />
+      <motion.div
+        animate={{ y: [0, -12, 0], rotateY: [0, 6, 0] }}
+        transition={{ ...floatTransition, duration: 5.8 }}
+        className="relative z-10 flex h-44 w-36 items-center justify-center rounded-2xl border border-white/25 bg-white/[0.08] text-white shadow-[inset_0_0_32px_rgba(255,255,255,0.13),0_24px_56px_rgba(0,0,0,0.28)] backdrop-blur-md"
+      >
+        <BookOpen className="h-16 w-16 text-[#d99a22]" />
+        <span className="absolute bottom-8 text-xl font-extrabold">YM-ID</span>
+      </motion.div>
+      {tiles.map(([Icon, label], index) => {
+        const positions = [
+          'left-10 top-14 rotate-[-8deg]',
+          'right-20 top-10 rotate-[7deg]',
+          'left-24 bottom-20 rotate-[8deg]',
+          'right-12 bottom-24 rotate-[-7deg]',
+        ]
+
+        return (
+          <motion.div
+            key={label}
+            animate={{ y: [0, index % 2 ? 9 : -9, 0] }}
+            transition={{ ...floatTransition, duration: 4.2 + index * 0.35 }}
+            className={`absolute flex h-24 w-24 items-center justify-center rounded-2xl border border-white/25 bg-white/[0.08] text-[#d99a22] shadow-[inset_0_0_24px_rgba(255,255,255,0.12),0_18px_40px_rgba(0,0,0,0.25)] backdrop-blur-md ${positions[index]}`}
+          >
+            <Icon className="h-10 w-10" />
+            <span className="absolute bottom-2 text-[10px] font-extrabold text-white/80">{label}</span>
+          </motion.div>
+        )
+      })}
+    </div>
+  )
+}
+
 export function Resource3DIcon({ type }: { type: 'tax' | 'dictionary' | 'cv' | 'insight' }) {
   const config = {
     tax: [Calculator, 'TAX'],

@@ -2,7 +2,7 @@ import { Check, ClipboardList, FileText, Search, Users } from 'lucide-react'
 import Link from 'next/link'
 import { ConsultingShell } from './site-shell'
 import { ConsultationCta, PageHero, SectionHeading } from './shared'
-import { ServicesPillars3D } from './three-d-visuals'
+import { ServicesHero3D, ServicesPillars3D } from './three-d-visuals'
 import { services } from '@/lib/site-data'
 
 const process = [
@@ -19,6 +19,7 @@ export default function ConsultingServicesPage() {
         label="SERVICES"
         title="Solusi yang Dirancang Sesuai Kebutuhan Anda"
         description="Kami menyediakan layanan konsultasi, pengembangan manusia, dan solusi digital untuk membantu bisnis pemula serta organisasi berkembang membangun fondasi yang lebih tertata dan siap bertumbuh."
+        visual={<ServicesHero3D />}
       />
 
       <section className="bg-[#fbfaf7] px-5 py-12 lg:px-8">
