@@ -31,8 +31,8 @@ export function PageHero({
             <span className="h-1.5 w-1.5 rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.9)]" />
             {label}
           </span>
-          <h1 className="mt-6 max-w-3xl text-4xl font-bold leading-[1.04] sm:text-5xl lg:text-[4.2rem]">{title}</h1>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-white/80">{description}</p>
+          <h1 className="mt-10 max-w-3x1 text-3xl font-bold leading-[1.04] sm:text-4xl lg:text-[3.8rem]">{title}</h1>
+          <p className="mt-3 max-w-2xl text-base leading-8 text-white/80">{description}</p>
           {actions ? <div className="mt-8 flex flex-wrap gap-4">{actions}</div> : null}
         </div>
         {visual && <div className="hidden justify-center lg:flex">{visual}</div>}
